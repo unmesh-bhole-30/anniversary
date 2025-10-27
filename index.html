@@ -201,10 +201,30 @@
         }
 
         @media (max-width: 768px) {
+            body {
+                min-height: 100vh;
+                height: auto;
+                padding: 20px 0;
+            }
+
+            .container {
+                margin: 20px 0;
+            }
+
             .card {
                 width: 90vw;
-                height: 80vh;
+                min-height: 100vh;
+                height: auto;
                 max-width: 400px;
+            }
+
+            .card-face {
+                height: auto;
+                min-height: 100vh;
+            }
+
+            .front-content, .back-content {
+                padding: 30px 20px;
             }
 
             .front-content h1 {
